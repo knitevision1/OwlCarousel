@@ -8,7 +8,7 @@
  *
  */
 
-/*JS Lint helpers: */
+/*JS Lint helpers: */b
 /*global dragMove: false, dragEnd: false, $, jQuery, alert, window, document */
 /*jslint nomen: true, continue:true */
 
@@ -394,7 +394,7 @@ if (typeof Object.create !== "function") {
         buildControls : function () {
             var base = this;
             if (base.options.navigation === true || base.options.pagination === true) {
-                base.owlControls = $("<div class=\"owl-controls\"/>").toggleClass("clickable", !base.browser.isTouch).appendTo(base.$elem);
+                base.owlControls = $("<div class=\"owl-controls\"/>").toggleClass("clickable", !base.browser.isTouch).appendTo(base.wrapperOuter);
             }
             if (base.options.pagination === true) {
                 base.buildPagination();
